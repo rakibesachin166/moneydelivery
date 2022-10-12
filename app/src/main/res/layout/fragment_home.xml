@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <RelativeLayout
+        android:id="@+id/homerelativelayout1_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nametextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/primarycolour"
+            android:fontFamily="@font/bestvalentina"
+            android:paddingStart="20dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="Hi Welcome "
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/nametextid"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/primarycolour"
+            android:foregroundGravity="center"
+            android:src="@drawable/logout"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nametextid"
+            android:scrollbars="none"
+            >
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:id="@+id/homerelativelayout2_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="25dp"
+            android:layout_marginHorizontal="05dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectanglenormal"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Cash Amount"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:id="@+id/amountedittexthome_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="05dp"
+                    android:background="@drawable/rectanglenormal"
+                    android:gravity="end"
+                    android:hint="Enter Amount"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingVertical="07dp"
+                    android:paddingHorizontal="10dp"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="05dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Delivery Charges"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"
+
+                    />
+                <TextView
+                    android:id="@+id/deliverychargetxt_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="00"
+                    android:layout_marginEnd="20dp"
+                    android:paddingVertical="10dp"
+                   android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="05dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Cash Charge "
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:id="@+id/cashtaxtextview_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="00"
+                    android:layout_marginEnd="20dp"
+                    android:paddingVertical="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="16sp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="05dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Grand Total"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:paddingVertical="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/totalvaluetextview_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="00"
+                    android:layout_marginEnd="20dp"
+                    android:paddingVertical="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginHorizontal="05dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@drawable/rectanglenormal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="03dp"
+                    android:id="@+id/AddresssetTextview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Set Cash Delivery Location"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginHorizontal="05dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rectanglenormal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:gravity="start|center_vertical"
+                    android:id="@+id/radiobtnid"
+                    android:checked="true"
+                    android:buttonTint="@color/primarycolour"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Pay on delivery (Upi/ Debit card)"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/orderbtn_id"
+                android:backgroundTint="@color/primarycolour"
+                android:background="@drawable/rectangle_ek7_shape"
+                android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingVertical="05dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Submit Order"
+                android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:textColor="@color/bluep"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:visibility="gone"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:layout_centerInParent="true"
+             android:id="@+id/framlayoutmapholder_id">
+             <fragment
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/map"
+                 android:name="com.google.android.gms.maps.SupportMapFragment"/>
+            <TextView
+                android:backgroundTint="@color/primarycolour"
+                android:background="@drawable/rectangle_ek7_shape"
+                android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+                android:id="@+id/usethislocation_id"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Use This Location"
+                android:textColor="@color/bluep"
+                android:textSize="12sp" />
+         </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

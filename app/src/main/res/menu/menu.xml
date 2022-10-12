@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navMain"
+        android:icon="@drawable/ic_outline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/orderitem"
+        android:icon="@drawable/orders_icon"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/navProfile"
+        android:icon="@drawable/ic_outline_person_24"
+        android:title="Profile" />
+
+</menu>

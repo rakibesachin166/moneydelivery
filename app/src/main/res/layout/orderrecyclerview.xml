@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:background="@drawable/rectanglenormalprimary"
+        app:cardElevation="05dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:orientation="vertical">
+
+           <TableLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:shrinkColumns="*"
+               android:stretchColumns="*"
+               >
+               <TableRow
+                   android:layout_marginTop="05dp"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="13sp"
+                       android:layout_span="1"
+                       android:textStyle="bold"
+                       android:textColor="#006633"
+                       android:text="Amount"
+                       android:gravity="center"
+                       />
+                   <TextView
+                       android:id="@+id/amounttxt_order"
+                       android:background="@drawable/rectanglenormalprimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15sp"
+                       android:layout_span="1"
+                       android:textColor="#000000"
+                       android:paddingVertical="02dp"
+                       android:text="0000"
+                       android:textStyle="bold"
+                       android:gravity="center"/>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="13sp"
+                       android:layout_span="1"
+                       android:textColor="#006633"
+                       android:text="Status"
+                       android:textStyle="bold"
+                       android:gravity="center"/>
+                   <TextView
+                       android:id="@+id/statustxt_id_order"
+                       android:background="@drawable/rectanglenormalprimary"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="13sp"
+                       android:layout_span="1"
+                       android:textStyle="bold"
+                       android:textColor="@color/red"
+                       android:text="Pending"
+                       android:paddingVertical="02dp"
+                       android:layout_marginEnd="5dp"
+                       android:gravity="center"/>
+
+               </TableRow>
+           </TableLayout>
+            <TextView
+                android:background="@drawable/rectanglenormalprimary"
+                android:id="@+id/addresstxt_order_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:text="Amol park b hanumanwadi nashik 423117 tal nashik district nashik nothing more about to tell"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="02dp"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/cancleorderbtn_id"
+                android:layout_marginTop="05dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="05dp"
+                android:paddingHorizontal="20dp"
+                android:background="@color/primarycolour"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Cancle Order"
+                android:textColor="#FFFF00"
+                android:layout_marginBottom="08dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

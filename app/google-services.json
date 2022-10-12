@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126493945321",
+    "firebase_url": "https://money-delivery-7a4c0-default-rtdb.firebaseio.com",
+    "project_id": "money-delivery-7a4c0",
+    "storage_bucket": "money-delivery-7a4c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126493945321:android:dc18944970f5356f7def78",
+        "android_client_info": {
+          "package_name": "com.sacdev.moneydelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126493945321-q65benfauc759621tr9acj6k57rr24vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sacdev.moneydelivery",
+            "certificate_hash": "b583e86936cd8e8a6be8d1059c1b7db824d67aed"
+          }
+        },
+        {
+          "client_id": "126493945321-p10j6120lo2e1f3812dodlm2jk585eio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD--cYrmB41Dfqt4tGaynxnaMiYlzONQnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126493945321-p10j6120lo2e1f3812dodlm2jk585eio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

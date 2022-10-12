@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <View   android:id="@+id/rectangle"
+            android:background="@drawable/rectangle_shape"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/_bg__login_ek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/_bg__login_ek2_shape" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/tittleloginviw_id"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/linearinputbox_id"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/doctot_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="05dp"
+            android:text="Money Deivery"
+            android:textAllCaps="true"
+            android:textColor="@color/bluep"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearinputbox_id"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rectangle_ek1_shape"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Tittletextlogin_id"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/first_name___last_na_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Enter Mobile Number "
+
+            />
+
+        <EditText
+            android:id="@+id/Edittextlogin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle__shape"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="number"
+            />
+        <TextView
+            android:backgroundTint="@color/primarycolour"
+            android:background="@drawable/rectangle_ek7_shape"
+            android:theme="@style/ShapeAppearanceOverlay.Material3.Button"
+            android:id="@+id/buttonlogin_id"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:paddingVertical="05dp"
+            android:layout_marginTop="40dp"
+            android:paddingHorizontal="70dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Get OTP"
+            android:textColor="@color/bluep"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/progresssloginid"/>
+
+</RelativeLayout>
